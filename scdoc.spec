@@ -1,11 +1,11 @@
 Summary:	Simple man page generator
 Name:		scdoc
-Version:	1.11.1
+Version:	1.11.2
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://git.sr.ht/~sircmpwn/scdoc/archive/%{version}.tar.gz
-# Source0-md5:	ce8369cb5d2406786f61cf805ceae66f
+# Source0-md5:	0f6e8b9bb741f52d975081784757078b
 URL:		https://git.sr.ht/~sircmpwn/scdoc/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,10 +27,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	PREFIX=%{_prefix} \
-	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
-	MANDIR=$RPM_BUILD_ROOT%{_mandir} \
-	PCDIR=$RPM_BUILD_ROOT%{_pkgconfigdir}
+	BINDIR=%{_bindir} \
+	MANDIR=%{_mandir} \
+	PCDIR=%{_pkgconfigdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
