@@ -1,16 +1,22 @@
 Summary:	Simple man page generator
+Summary(pl.UTF-8):	Prosty generator stron podręcznika man
 Name:		scdoc
 Version:	1.11.2
 Release:	1
 License:	MIT
-Group:		Applications
+Group:		Applications/Text
 Source0:	https://git.sr.ht/~sircmpwn/scdoc/archive/%{version}.tar.gz
 # Source0-md5:	0f6e8b9bb741f52d975081784757078b
 URL:		https://git.sr.ht/~sircmpwn/scdoc/
+BuildRequires:	gcc >= 5:3.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 scdoc is a simple man page generator for POSIX systems written in C99.
+
+%description -l pl.UTF-8
+scdoc to prosty generator stron podręcznika man dla systemów
+POSIX-owych, napisany w C99.
 
 %prep
 %setup -q
