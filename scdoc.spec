@@ -1,12 +1,12 @@
 Summary:	Simple man page generator
 Summary(pl.UTF-8):	Prosty generator stron podręcznika man
 Name:		scdoc
-Version:	1.11.2
+Version:	1.11.3
 Release:	1
 License:	MIT
 Group:		Applications/Text
 Source0:	https://git.sr.ht/~sircmpwn/scdoc/archive/%{version}.tar.gz
-# Source0-md5:	0f6e8b9bb741f52d975081784757078b
+# Source0-md5:	4e0928d10d23d24f2c1eb0f311ceef14
 URL:		https://git.sr.ht/~sircmpwn/scdoc/
 BuildRequires:	gcc >= 5:3.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
