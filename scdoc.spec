@@ -24,7 +24,7 @@ POSIX-owych, napisany w C99.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcppflags} %{rpmcflags} -DVERSION='\"%{version}\"'" \
+	CFLAGS="%{rpmcppflags} %{rpmcflags} -DVERSION='\"%{version}\"' -Wno-error=unused-variable -Wno-error=unused-but-set-variable" \
 	LDFLAGS="%{rpmldflags}" \
 	PREFIX="%{_prefix}" \
 
